@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerson Othoniel Espinoza Huaman · Ingeniería de Sistemas</title>
+  <meta name="description" content="Portafolio profesional de Gerson Othoniel Espinoza Huaman, estudiante de Ingeniería de Sistemas. Proyectos, habilidades técnicas y contacto.">
+  <meta name="author" content="Gerson Othoniel Espinoza Huaman">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph / redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gerson Othoniel Espinoza Huaman · Ingeniería de Sistemas">
+  <meta property="og:description" content="Portafolio profesional: proyectos, habilidades técnicas y contacto.">
+  <meta property="og:image" content="./foto.jpg">
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f5bd5'/%3E%3Ctext x='50' y='68' font-size='58' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Enlace de accesibilidad: saltar navegación (teclado / lector de pantalla) -->
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Gerson Othoniel Espinoza Huaman — Inicio">
+        <span class="brand__mark" aria-hidden="true">G</span>
+        <span class="brand__name">Gerson&nbsp;Espinoza</span>
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Ley de Miller: máximo 5–7 opciones, agrupadas y claras -->
+      <ul class="nav-list" id="nav-list">
+        <li><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- Interruptor accesible de modo claro / oscuro (persistente) -->
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro" title="Cambiar tema claro / oscuro">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <line x1="12" y1="2.5" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.5"/>
+            <line x1="2.5" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.5" y2="12"/>
+            <line x1="5.1" y1="5.1" x2="6.9" y2="6.9"/><line x1="17.1" y1="17.1" x2="18.9" y2="18.9"/>
+            <line x1="18.9" y1="5.1" x2="17.1" y2="6.9"/><line x1="6.9" y1="17.1" x2="5.1" y2="18.9"/>
+          </g>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Estudiante de Ingeniería de Sistemas</p>
+          <h1 class="hero__title" id="hero-title">Gerson Othoniel Espinoza Huaman</h1>
+
+          <!-- Resumen profesional: conciso para reducir carga cognitiva -->
+          <p class="hero__lead">
+            Construyo soluciones de software claras y confiables. Me enfoco en
+            desarrollo web, bases de datos y resolución de problemas, con código
+            limpio y experiencias accesibles. <em>(Edita este resumen con tu objetivo profesional.)</em>
+          </p>
+
+          <!-- Efecto Von Restorff: acción principal destacada + secundaria clara -->
+          <div class="hero__actions">
+            <a class="btn btn-primary btn-lg" href="#proyectos">
+              Ver proyectos
+              <svg class="icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-secondary btn-lg" href="#contacto">Contactar</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Enlaces profesionales">
+            <!-- Reemplaza con tus redes reales -->
+            <li><a class="text-link" href="https://github.com/usuario" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+            <li><a class="text-link" href="https://www.linkedin.com/in/usuario" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+            <li><a class="text-link" href="mailto:correo@ejemplo.com">Correo</a></li>
+          </ul>
+        </div>
+
+        <!-- Fotografía personal: ruta exacta ./foto.jpg con marco estilizado -->
+        <figure class="hero-photo reveal" aria-label="Fotografía de Gerson Othoniel Espinoza Huaman">
+          <!-- Espacio reservado: añade tu fotografía personal en ./foto.jpg
+               (JPG, cuadrada, ~600x600 px). Mientras tanto se muestra un marcador. -->
+          <span class="hero-photo__fallback" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5L5 20"/>
+            </svg>
+            <span class="hero-photo__hint">Añade tu foto en<br><code>./foto.jpg</code></span>
+          </span>
+          <!-- Reemplaza ./foto.jpg con tu imagen personal -->
+          <img class="hero-photo__img" src="./foto.jpg" alt="Retrato profesional de Gerson Othoniel Espinoza Huaman" width="600" height="600" loading="eager" decoding="async" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Perfil</p>
+          <h2 class="section__title" id="sobre-mi-title">Sobre mí</h2>
+        </header>
+
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              Soy <strong>Gerson Othoniel Espinoza Huaman</strong>, estudiante de
+              <strong>Ingeniería de Sistemas</strong>. Me interesa diseñar y construir
+              sistemas que resuelvan problemas reales con soluciones claras, mantenibles
+              y accesibles.
+            </p>
+            <p>
+              <!-- Edita: universidad, semestre, especialidad, idiomas, objetivo -->
+              Actualmente profundizo en desarrollo de software, estructuras de datos,
+              bases de datos y buenas prácticas de ingeniería. Busco oportunidades para
+              aprender, colaborar en equipo y crecer como profesional.
+            </p>
+          </div>
+
+          <!-- Bloques pequeños (Ley de Miller): fáciles de escanear -->
+          <ul class="facts" aria-label="Datos clave">
+            <li class="fact"><span class="fact__label">Formación</span><span class="fact__value">Ingeniería de Sistemas</span></li>
+            <li class="fact"><span class="fact__label">Enfoque</span><span class="fact__value">Desarrollo de software</span></li>
+            <li class="fact"><span class="fact__label">Interés</span><span class="fact__value">Web, datos, backend</span></li>
+            <li class="fact"><span class="fact__label">Disponibilidad</span><span class="fact__value">Prácticas / colaboración</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="section section--alt" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Trabajo</p>
+          <h2 class="section__title" id="proyectos-title">Proyectos destacados</h2>
+          <p class="section__subtitle">Una selección breve. Cada tarjeta resume el problema, la solución y las tecnologías.</p>
+        </header>
+
+        <!-- Ley de Miller: bloque claro de 6 proyectos (máx. 5–7).
+             Reemplaza los proyectos de ejemplo por tus proyectos reales. -->
+        <div class="projects-grid">
+          <!-- PROYECTO DE EJEMPLO 1 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">Sistema de gestión académica</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">Aplicación para administrar estudiantes, cursos y calificaciones con roles y reportes. <em>(Reemplaza con tu proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">Java</li><li class="tag">SQL</li><li class="tag">POO</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto Sistema de gestión académica">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto Sistema de gestión académica">Ver demo</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO DE EJEMPLO 2 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">Tienda en línea</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">E-commerce responsivo con carrito, catálogo y formulario de pedido. <em>(Reemplaza con tu proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto Tienda en línea">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto Tienda en línea">Ver demo</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO DE EJEMPLO 3 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">API REST</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">Servicio backend con autenticación, validación y persistencia en base de datos. <em>(Reemplaza con tu proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">Node.js</li><li class="tag">REST</li><li class="tag">PostgreSQL</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto API REST">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto API REST">Ver demo</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO DE EJEMPLO 4 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">Gestor de tareas</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">Aplicación web para crear, priorizar y completar tareas con persistencia local. <em>(Reemplaza con tu proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">React</li><li class="tag">CSS</li><li class="tag">Git</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto Gestor de tareas">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto Gestor de tareas">Ver demo</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO DE EJEMPLO 5 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">Análisis de datos</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">Scripts y visualizaciones para limpiar datos y obtener métricas claras. <em>(Reemplaza con tu proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">Python</li><li class="tag">SQL</li><li class="tag">Matplotlib</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto Análisis de datos">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto Análisis de datos">Ver demo</a>
+            </div>
+          </article>
+
+          <!-- PROYECTO DE EJEMPLO 6 -->
+          <article class="card project reveal">
+            <div class="card__header">
+              <h3 class="card__title">Portafolio personal</h3>
+              <span class="badge">Ejemplo</span>
+            </div>
+            <p class="card__desc">Sitio accesible y responsivo con modo claro/oscuro persistente. <em>(Este mismo proyecto.)</em></p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li class="tag">HTML5</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn-secondary" href="#" aria-label="Ver código del proyecto Portafolio personal">Ver código</a>
+              <a class="btn btn-primary" href="#" aria-label="Ver demo del proyecto Portafolio personal">Ver demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Competencias</p>
+          <h2 class="section__title" id="habilidades-title">Habilidades técnicas</h2>
+          <p class="section__subtitle">Agrupadas por categoría, en bloques claros. <em>(Ajusta según tu experiencia.)</em></p>
+        </header>
+
+        <!-- Ley de Miller: grupos de 4–7 elementos, chunking por categoría -->
+        <div class="skills-grid">
+          <div class="card skill-group reveal">
+            <h3 class="skill-group__title">Lenguajes</h3>
+            <ul class="skill-list">
+              <li>Java</li><li>Python</li><li>C / C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="card skill-group reveal">
+            <h3 class="skill-group__title">Desarrollo web</h3>
+            <ul class="skill-list">
+              <li>HTML5</li><li>CSS3</li><li>React</li><li>Node.js</li><li>Git / GitHub</li>
+            </ul>
+          </div>
+          <div class="card skill-group reveal">
+            <h3 class="skill-group__title">Bases de datos</h3>
+            <ul class="skill-list">
+              <li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="card skill-group reveal">
+            <h3 class="skill-group__title">Herramientas</h3>
+            <ul class="skill-list">
+              <li>Git</li><li>Linux</li><li>Docker</li><li>VS Code</li><li>Figma</li>
+            </ul>
+          </div>
+          <div class="card skill-group reveal">
+            <h3 class="skill-group__title">Conceptos</h3>
+            <ul class="skill-list">
+              <li>POO</li><li>Estructuras de datos</li><li>Algoritmos</li><li>Redes</li><li>Sistemas operativos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section section--alt" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Hablemos</p>
+          <h2 class="section__title" id="contacto-title">Contacto</h2>
+          <p class="section__subtitle">¿Tienes una oportunidad o proyecto? Envíame un mensaje.</p>
+        </header>
+
+        <div class="contact reveal">
+          <!-- Enlaces directos -->
+          <aside class="contact__info" aria-label="Información de contacto">
+            <h3 class="contact__info-title">Encuéntrame</h3>
+            <ul class="contact-links">
+              <!-- Reemplaza con tus datos reales -->
+              <li><a class="contact-link" href="mailto:correo@ejemplo.com">Correo: correo@ejemplo.com</a></li>
+              <li><a class="contact-link" href="https://github.com/usuario" rel="noopener noreferrer" target="_blank">GitHub: @usuario</a></li>
+              <li><a class="contact-link" href="https://www.linkedin.com/in/usuario" rel="noopener noreferrer" target="_blank">LinkedIn: /in/usuario</a></li>
+            </ul>
+            <p class="contact__note">Ubicación: Perú. <em>(Edita)</em></p>
+          </aside>
+
+          <!-- Formulario accesible (sin backend: abre tu cliente de correo) -->
+          <form class="contact-form" id="contact-form" action="mailto:correo@ejemplo.com" method="post" enctype="text/plain" data-contact-email="correo@ejemplo.com">
+            <div class="field">
+              <label class="field__label" for="name">Nombre</label>
+              <input class="field__input" type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre" required minlength="2">
+            </div>
+            <div class="field">
+              <label class="field__label" for="email">Correo electrónico</label>
+              <input class="field__input" type="email" id="email" name="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="subject">Asunto</label>
+              <input class="field__input" type="text" id="subject" name="subject" placeholder="Motivo del mensaje" required minlength="3">
+            </div>
+            <div class="field">
+              <label class="field__label" for="message">Mensaje</label>
+              <textarea class="field__input field__textarea" id="message" name="message" rows="5" placeholder="Escribe tu mensaje…" required minlength="10"></textarea>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit">Enviar mensaje</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__name">Gerson Othoniel Espinoza Huaman</p>
+      <p class="footer__meta">Estudiante de Ingeniería de Sistemas · © <span id="year">2026</span></p>
+      <a class="text-link" href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
